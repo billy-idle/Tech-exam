@@ -1,5 +1,6 @@
 package com.tech.exam.estudiante;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Positive;
 import lombok.Data;
@@ -8,6 +9,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public final class Estudiante {
+    @JsonIgnore
+    private Long id;
     private @Positive(message = "{estudiante.codigo.positive}") Long codigo;
     private @NotEmpty(message = "{estudiante.nombre.empty}") String nombre;
     private @NotEmpty(message = "{estudiante.especialidad.empty}") String especialidad;

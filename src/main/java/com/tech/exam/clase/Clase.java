@@ -1,5 +1,6 @@
 package com.tech.exam.clase;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,6 +8,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public final class Clase {
+    @JsonIgnore
+    private Long id;
     private @NotEmpty(message = "{clase.nombre.empty}") String nombre;
     private @NotEmpty(message = "{clase.horario.empty}") String horario;
     private @NotEmpty(message = "{clase.aula.empty}") String aula;

@@ -18,7 +18,7 @@ import java.util.Objects;
 @NoArgsConstructor
 public class InscripcionEntity extends EntityBase {
     @Column(nullable = false)
-    private String posicion;
+    private Integer posicion;
     @ManyToOne(fetch = FetchType.LAZY)
     @NotNull
     @ToString.Exclude
