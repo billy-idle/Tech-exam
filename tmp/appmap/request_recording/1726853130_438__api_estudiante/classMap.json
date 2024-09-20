@@ -1,0 +1,110 @@
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "name": "toEstudiante",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/tech/exam/estudiante/EstudianteMapperImpl.java:63"
+                      },
+                      {
+                        "name": "toEstudiante",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/tech/exam/estudiante/EstudianteMapperImpl.java:79"
+                      },
+                      {
+                        "name": "toEstudianteEntity",
+                        "type": "function",
+                        "static": false,
+                        "location": "com/tech/exam/estudiante/EstudianteMapperImpl.java:18"
+                      }
+                    ],
+                    "name": "EstudianteMapperImpl",
+                    "type": "class"
+                  },
+                  {
+                    "children": [
+                      {
+                        "name": "saveEstudiante",
+                        "type": "function",
+                        "static": false,
+                        "location": "src/main/java/com/tech/exam/estudiante/EstudianteService.java:21"
+                      }
+                    ],
+                    "name": "EstudianteService",
+                    "type": "class"
+                  },
+                  {
+                    "children": [
+                      {
+                        "name": "saveEstudiante",
+                        "type": "function",
+                        "static": false,
+                        "location": "src/main/java/com/tech/exam/estudiante/EstudianteController.java:23"
+                      }
+                    ],
+                    "name": "EstudianteController",
+                    "type": "class"
+                  },
+                  {
+                    "children": [
+                      {
+                        "name": "logSavedAttempt",
+                        "type": "function",
+                        "static": false,
+                        "location": "src/main/java/com/tech/exam/estudiante/EstudianteAspect.java:16"
+                      }
+                    ],
+                    "name": "EstudianteAspect",
+                    "type": "class"
+                  }
+                ],
+                "name": "estudiante",
+                "type": "package"
+              }
+            ],
+            "name": "exam",
+            "type": "package"
+          }
+        ],
+        "name": "tech",
+        "type": "package"
+      }
+    ],
+    "name": "com",
+    "type": "package"
+  },
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "POST /api/estudiante"
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "select next value for estudiante_seq"
+      },
+      {
+        "type": "query",
+        "name": "insert into estudiante (codigo,fecha_creacion,especialidad,grado,fecha_modificacion,nombre,id) values (?,?,?,?,?,?,?)"
+      }
+    ]
+  }
+]

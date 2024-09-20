@@ -16,7 +16,7 @@
 * **DELETE**: Elimina filas específicas basadas en una condición.
 * **DROP**: Elimina toda la tabla.
 
-### 4. Si se tiene una lista de números desordenada { 8,1,7,2,0,3,6,4,5,9} y se desea obtener como único resultado el dato con mayor valor, ¿Cuál de las funciones de SQL se debe utilizar?
+### 4. Si se tiene una lista de números desordenada {8,1,7,2,0,3,6,4,5,9} y se desea obtener como único resultado el dato con mayor valor, ¿Cuál de las funciones de SQL se debe utilizar?
 
 * Se debe utilizar la función `MAX`
 
@@ -73,9 +73,33 @@ WHERE CLASE.HORARIO = 'M-F9' AND TEMP_VIEW.NOMBRE = CLASE.NOMBRE AND TEMP_VIEW.C
 |BA200|M-F9|SC110|400|REY|
 |BA200|M-F9|SC110|450|JONES|
 
+## HTML y CSS3
+
+### Página principal
+
+Diagrama una página principal index.html tomando en cuenta las siguientes especificaciones y utilizando estilos que permitan identificar las fortalezas en maquetado y hojas de estilos:
+
+1. Título te sugerimos coloques el título de tu documento, "Hoja de Vida" o "Curriculum Vitae" o "Resumen Curricular" utilizando la etiqueta h1.
+
+2. Datos Personales indica tus nombres, apellidos, fecha y lugar de nacimiento utilizando las etiquetas h2 y h3.
+
+3. Enlaces de menú básico para enlazar las tres páginas que tiene tu proyecto: Inicio (index.html), educación (educacion.html).
+
+4. Incorpora un título en h2 Información Personal y agrega una Foto de tu preferencia acorde con tu hoja de vida.
+
+5. Perfil redacta un parráfo y describe habilidades y destrezas que te definen como un exitoso profesional en tu área de conocimiento y agrega una lista no numerada (viñetas) con los idiomas que comprendes, hablas y escribes.
+
+6. Pie de Página en esta sección debes colocar información de contacto como: correo electrónico, teléfono, redes sociales o dirección.
+
+### Solución
+
+[Hoja de vida - Guillermo Guzmán Sánchez](src/main/resources/static/index.html)
+
 ## Java
 
 ### a. Construir un método para calcular el área de un triángulo teniendo las variables de base y altura
+
+[>>Try it out<<](http://localhost:9090/swagger-ui/index.html#/forma-controller/calculaAreaTriangulo)
 
 ```java
 public static double calculaAreaTriangulo(double base, double altura) {
@@ -85,6 +109,8 @@ public static double calculaAreaTriangulo(double base, double altura) {
 
 ### b. Construir un método para calcular el área de un círculo teniendo en cuenta el radio
 
+[>>Try it out<<](http://localhost:9090/swagger-ui/index.html#/forma-controller/calculaAreaCirculo)
+
 ```java
 public static double calculaAreaCirculo(double radio) {
     return Math.PI * radio * radio;
@@ -93,4 +119,67 @@ public static double calculaAreaCirculo(double radio) {
 
 ### c. Construya un microservicio de gestión realizando CRUD con la tabla `ESTUDIANTE`, del punto 5 con Spring Boot teniendo en cuenta las diferentes capas de persistencia, de datos y lógica de negocio
 
-* Solución:
+* Estructura de paquetes
+
+La estructura de paquetes se implementa a través del `empaquetado por característica`, permitiendo una clara definición de los elementos del espacio de la solución (dominio), ademas de una alta cohesión y bajo acoplamiento.
+
+```shell
+src
+  ├───main
+      ├───java
+          └───com
+              └───tech
+                  └───exam
+                      │   TechTestApplication.java
+                      │
+                      ├───clase
+                      │       Clase.java
+                      │       ClaseAspect.java
+                      │       ClaseController.java
+                      │       ClaseEntity.java
+                      │       ClaseMapper.java
+                      │       ClaseRepository.java
+                      │       ClaseRequest.java
+                      │       ClaseService.java
+                      │
+                      ├───common
+                      │       EntityBase.java
+                      │       NoRecordFoundException.java
+                      │
+                      ├───estudiante
+                      │       Estudiante.java
+                      │       EstudianteAspect.java
+                      │       EstudianteController.java
+                      │       EstudianteEntity.java
+                      │       EstudianteMapper.java
+                      │       EstudianteRepository.java
+                      │       EstudianteRequest.java
+                      │       EstudianteService.java
+                      │
+                      ├───geo
+                      │       Forma.java
+                      │       FormaController.java
+                      │
+                      └───inscripcion
+                              Inscripcion.java
+                              InscripcionAspect.java
+                              InscripcionController.java
+                              InscripcionEntity.java
+                              InscripcionMapper.java
+                              InscripcionRepository.java
+                              InscripcionService.java
+```
+
+* Diagrama de secuencia para el caso de uso `crear estudiante`: 
+
+![crear-estudiante-uc-sq1](src/main/resources/ds1.png)
+
+* Diagrama de secuencia detallado para el caso de uso `crear estudiante` donde se muestra una vista detallada de sus componentes y capas de la arquitectura de la aplicación:
+
+![crear-estudiante-uc-sq2](src/main/resources/ds2.png)
+
+* Documentación y `Try it out`
+
+La documentación de los endpoints se encuentra disponible en: [Swagger-UI](http://localhost:9090/swagger-ui/index.html)
+
+![Swagger-UI](src/main/resources/docs.png)

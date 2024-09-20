@@ -1,0 +1,14 @@
+[
+  {
+    "caller": "POST /api/estudiante",
+    "callee": "com/tech"
+  },
+  {
+    "caller": "com/tech",
+    "callee": "insert into estudiante (codigo,fecha_creacion,especialidad,grado,fecha_modificacion,nombre,id) values (?,?,?,?,?,?,?)"
+  },
+  {
+    "caller": "com/tech",
+    "callee": "select next value for estudiante_seq"
+  }
+]

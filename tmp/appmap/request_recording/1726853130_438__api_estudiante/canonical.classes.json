@@ -1,0 +1,6 @@
+[
+  "com/tech/exam/estudiante/EstudianteAspect",
+  "com/tech/exam/estudiante/EstudianteController",
+  "com/tech/exam/estudiante/EstudianteMapperImpl",
+  "com/tech/exam/estudiante/EstudianteService"
+]

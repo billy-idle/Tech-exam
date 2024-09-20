@@ -1,0 +1,198 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.nav-curriculum {
+    width: 100%;
+    background-image: url("../assets/img/banner-programer.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+
+.iam-curriculum {
+    margin-top: 5vw;
+    margin-bottom: 2vw;
+}
+
+.iam-curriculum .title-h1-curriculum {
+    background-color: rgba(116, 164, 253, 0.733);
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.iam-curriculum .title-h1-curriculum h1 {
+    font-weight: 600;
+    color: white;
+}
+
+.iam-curriculum .img-curriculum {
+
+    margin-top: 20px;
+    width: 180px;
+    height: 180px;
+    background-image: url("../assets/img/foto-guillermo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+
+}
+
+.name-curriculum {
+    margin-top: 30px;
+}
+
+.name-curriculum h3 {
+    font-weight: 600;
+    color: white;
+}
+
+.basic-curriculum h5 {
+    color: white;
+
+}
+
+.download-curriculum  {
+    margin-top: 2vw;
+}
+
+.download-curriculum  {
+    margin-top: 2vw;
+    margin-bottom: 15px;
+}
+
+.download-curriculum a {
+    text-decoration: none;
+    color: white;
+}
+
+.download-curriculum a:hover {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.about-curriculum {
+    padding: 6vw;  
+}
+
+.about-basic-curriculum {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.about-curriculum .about-section {
+    padding: 20px;
+}
+
+.about-curriculum .about-section h4 {
+    font-weight: 600;
+}
+
+.about-curriculum .about-section .resumen-curriculum {
+    margin-top: 20px;
+}
+
+.about-curriculum .about-section .resumen-curriculum p{
+    text-align: justify;
+}
+
+.about-curriculum .basic-information-section {
+    padding: 20px;
+}
+
+.about-curriculum .basic-information-section h4{
+    font-weight: 600;
+}
+
+.about-curriculum .basic-information-section .item-0{
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.about-curriculum .basic-information-section .item-1{
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.about-curriculum .basic-information-section .item-2{
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.about-curriculum .basic-information-section .item-0 .carrier-item{
+    font-weight: 400;
+}
+
+.about-curriculum .basic-information-section .item-1 .date-item{
+    font-weight: 400;
+}
+
+.about-curriculum .basic-information-section .item-2 .city-item{
+    font-weight: 400;
+}
+
+.skills-curriculum {
+    padding-right: 5vw;
+    padding-left: 5vw;
+    padding-bottom: 3vw;
+}
+
+.card{
+    background-color: white !important;
+    border: 0px !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.no-styles {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.no-styles li {
+    display: inline;
+}
+
+.no-styles li a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.no-styles li a:hover {
+    color:grey
+}
+
+footer {
+    padding-top: 30px;
+    background-color: #292c2f;
+    color: #bbb;
+  }
+  
+  footer a {
+    color: #999;
+    text-decoration:none;
+  }
+  
+  footer a:hover, footer a:focus {
+    color: #aaa;
+    text-decoration:none;
+    border-bottom:1px dotted #999;
+  }
+  
+  footer .form-control {
+      background-color: #1f2022;
+      box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+      border: none;
+      resize: none;
+      color: #d1d2d2;
+      padding: 0.7em 1em;
+  }
