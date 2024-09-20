@@ -1,5 +1,7 @@
 package com.tech.exam.inscripcion;
 
+import com.tech.exam.clase.ClaseMapper;
+import com.tech.exam.estudiante.EstudianteMapper;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingConstants;
@@ -9,7 +11,7 @@ import org.springframework.data.domain.PageImpl;
 import java.util.ArrayList;
 import java.util.List;
 
-@Mapper(componentModel = MappingConstants.ComponentModel.SPRING)
+@Mapper(componentModel = MappingConstants.ComponentModel.SPRING, uses = {ClaseMapper.class, EstudianteMapper.class})
 public interface InscripcionMapper {
 
     InscripcionEntity toInscripcionEntity(Inscripcion inscripcion);
@@ -22,7 +24,7 @@ public interface InscripcionMapper {
         return new PageImpl<>(inscripcionList, inscripcionPage.getPageable(), inscripcionPage.getTotalElements());
     }
 
-    @Mapping(source = "estudiante.codigo", target = "codigoEstudiante", ignore = true)
+    @Mapping(source = "estudiante.codigo", target = "codigoEstudiante")
     @Mapping(source = "clase.nombre", target = "nombreClase")
     Inscripcion toInscripcion(InscripcionEntity inscripcionEntity);
 }

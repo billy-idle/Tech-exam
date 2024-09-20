@@ -1,14 +1,14 @@
 package com.tech.exam.inscripcion;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
+import java.util.List;
 
 @RestController
 @RequestMapping("/api")
@@ -21,10 +21,15 @@ public class InscripcionController {
         Inscripcion inscripcion = service.saveInscripcion(request);
 
         URI uri = ServletUriComponentsBuilder.fromCurrentRequestUri()
-                                             .path("/{id}")
-                                             .buildAndExpand(inscripcion.getEstudiante().getCodigo())
+                                             .buildAndExpand()
                                              .toUri();
 
         return ResponseEntity.created(uri).build();
+    }
+
+    @GetMapping("/inscripcion")
+    public ResponseEntity<List<Inscripcion>> findAllClases(Pageable pageable) {
+        Page<Inscripcion> page = service.findAllInscripcion(pageable);
+        return ResponseEntity.ok(page.getContent());
     }
 }

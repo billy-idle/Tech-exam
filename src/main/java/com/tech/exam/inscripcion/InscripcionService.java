@@ -44,15 +44,18 @@ public class InscripcionService {
         InscripcionEntity entity = mapper.toInscripcionEntity(inscripcion);
 
 
-        Inscripcion savedInscripcion = mapper.toInscripcion(repository.save(mapper.toInscripcionEntity(inscripcion)));
-
-        return savedInscripcion;
+        return mapper.toInscripcion(repository.save(mapper.toInscripcionEntity(inscripcion)));
     }
 
     public Page<Inscripcion> findAllInscripcion(Pageable pageable) {
+        var all = repository.findAll(PageRequest.of(pageable.getPageNumber(),
+                                                     pageable.getPageSize(),
+                                                     pageable.getSortOr(Sort.by(Sort.Direction.ASC,
+                                                                                "posicion"))));
+
         return mapper.toInscripcionPage(repository.findAll(PageRequest.of(pageable.getPageNumber(),
                                                                           pageable.getPageSize(),
                                                                           pageable.getSortOr(Sort.by(Sort.Direction.ASC,
-                                                                                                     "nombreClase")))));
+                                                                                                     "posicion")))));
     }
 }
