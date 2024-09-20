@@ -16,7 +16,7 @@
 * **DELETE**: Elimina filas específicas basadas en una condición.
 * **DROP**: Elimina toda la tabla.
 
-### 4. Si se tiene una lista de números desordenada {8,1,7,2,0,3,6,4,5,9} y se desea obtener como único resultado el dato con mayor valor, ¿Cuál de las funciones de SQL se debe utilizar?
+### 4. Si se tiene una lista de números desordenada `{8,1,7,2,0,3,6,4,5,9}` y se desea obtener como único resultado el dato con mayor valor, ¿Cuál de las funciones de SQL se debe utilizar?
 
 * Se debe utilizar la función `MAX`
 
@@ -92,6 +92,7 @@ Diagrama una página principal index.html tomando en cuenta las siguientes espec
 6. Pie de Página en esta sección debes colocar información de contacto como: correo electrónico, teléfono, redes sociales o dirección.
 
 ### Solución
+[>>Try it out<<](http://localhost:9090/index.html)
 
 [Hoja de vida - Guillermo Guzmán Sánchez](src/main/resources/static/index.html)
 
