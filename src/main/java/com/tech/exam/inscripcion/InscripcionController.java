@@ -18,7 +18,7 @@ public class InscripcionController {
 
     @PostMapping("/inscripcion")
     public ResponseEntity<Void> saveInscripcion(@RequestBody Inscripcion request) {
-        Inscripcion inscripcion = service.saveInscripcion(request);
+        service.saveInscripcion(request);
 
         URI uri = ServletUriComponentsBuilder.fromCurrentRequestUri()
                                              .buildAndExpand()
