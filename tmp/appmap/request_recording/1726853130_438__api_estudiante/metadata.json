@@ -1,0 +1,23 @@
+{
+  "name": "POST /api/estudiante (201) - 12:25:30.438",
+  "app": "Tech-exam",
+  "language": {
+    "name": "java",
+    "version": "17.0.12+10-LTS",
+    "engine": "OpenJDK 64-Bit Server VM"
+  },
+  "client": {
+    "name": "appmap-java",
+    "url": "https://github.com/appland/appmap-java"
+  },
+  "recorder": {
+    "name": "request_recording",
+    "type": "requests"
+  },
+  "recording": {},
+  "git": {
+    "repository": "git@github.com:billy-idle/Tech-exam.git",
+    "branch": "feature/fill-form-in",
+    "commit": "3aac6fdf8447bec34aad7856c3c93a655bf908b6"
+  }
+}

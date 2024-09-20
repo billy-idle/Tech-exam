@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    default: dev
+  application:
+    name: tech-test
+    version: 0.1.0

@@ -1,0 +1,432 @@
+{
+  "events": [
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {
+          "sec-fetch-mode": "cors",
+          "content-length": "82",
+          "referer": "http://localhost:9090/swagger-ui/index.html",
+          "sec-fetch-site": "same-origin",
+          "accept-language": "en-US,en;q=0.9,es-CO;q=0.8,es;q=0.7",
+          "cookie": "XSRF-TOKEN=rp4a2o9pvg9hn6tmle82rbo425; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJsYXN0UmVmcmVzaFRpbWUiOjE3MjY4NDE4NDc4NDUsInhzcmZUb2tlbiI6InJwNGEybzlwdmc5aG42dG1sZTgycmJvNDI1IiwianRpIjoiQVpJUG12ak5IeXdnNmpUanQwR0giLCJzdWIiOiJBWklQbVpRckh5d2c2alRqdHFNbCIsImlhdCI6MTcyNjgzODY2NywiZXhwIjoxNzI3MTAxMDQ3fQ.VDScBQHt_EN9-QaWZTKYfsjcsdpXm2eyvibw-YbFJGo",
+          "origin": "http://localhost:9090",
+          "dnt": "1",
+          "accept": "*/*",
+          "sec-ch-ua": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Microsoft Edge\";v=\"128\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Windows\"",
+          "host": "localhost:9090",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept-encoding": "gzip, deflate, br, zstd",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0",
+          "sec-fetch-dest": "empty"
+        },
+        "normalized_path_info": "/api/estudiante",
+        "path_info": "/api/estudiante",
+        "protocol": "HTTP/1.1",
+        "request_method": "POST"
+      },
+      "id": 1,
+      "thread_id": 38
+    },
+    {
+      "defined_class": "com.tech.exam.estudiante.EstudianteController",
+      "event": "call",
+      "id": 2,
+      "lineno": 23,
+      "method_id": "saveEstudiante",
+      "parameters": [
+        {
+          "class": "com.tech.exam.estudiante.EstudianteRequest",
+          "kind": "req",
+          "name": "request",
+          "object_id": 1106687060,
+          "value": "EstudianteRequest[codigo=404, nombre=alan, especialidad=arte, grado=sr]"
+        }
+      ],
+      "path": "src/main/java/com/tech/exam/estudiante/EstudianteController.java",
+      "receiver": {
+        "class": "com.tech.exam.estudiante.EstudianteController",
+        "object_id": 1651346273,
+        "value": "com.tech.exam.estudiante.EstudianteController@626d8b61"
+      },
+      "static": false,
+      "thread_id": 38
+    },
+    {
+      "defined_class": "com.tech.exam.estudiante.EstudianteService",
+      "event": "call",
+      "id": 3,
+      "lineno": 21,
+      "method_id": "saveEstudiante",
+      "parameters": [
+        {
+          "class": "com.tech.exam.estudiante.EstudianteRequest",
+          "kind": "req",
+          "name": "request",
+          "object_id": 1106687060,
+          "value": "EstudianteRequest[codigo=404, nombre=alan, especialidad=arte, grado=sr]"
+        }
+      ],
+      "path": "src/main/java/com/tech/exam/estudiante/EstudianteService.java",
+      "receiver": {
+        "class": "com.tech.exam.estudiante.EstudianteService",
+        "object_id": 1090625591,
+        "value": "com.tech.exam.estudiante.EstudianteService@4101a037"
+      },
+      "static": false,
+      "thread_id": 38
+    },
+    {
+      "defined_class": "com.tech.exam.estudiante.EstudianteMapperImpl",
+      "event": "call",
+      "id": 4,
+      "lineno": 63,
+      "method_id": "toEstudiante",
+      "parameters": [
+        {
+          "class": "com.tech.exam.estudiante.EstudianteRequest",
+          "kind": "req",
+          "name": "request",
+          "object_id": 1106687060,
+          "value": "EstudianteRequest[codigo=404, nombre=alan, especialidad=arte, grado=sr]"
+        }
+      ],
+      "path": "com/tech/exam/estudiante/EstudianteMapperImpl.java",
+      "receiver": {
+        "class": "com.tech.exam.estudiante.EstudianteMapperImpl",
+        "object_id": 346906582,
+        "value": "com.tech.exam.estudiante.EstudianteMapperImpl@14ad5fd6"
+      },
+      "static": false,
+      "thread_id": 38
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 5,
+      "parent_id": 4,
+      "return_value": {
+        "class": "com.tech.exam.estudiante.Estudiante",
+        "object_id": 203063921,
+        "value": "Estudiante(id=null, codigo=404, nombre=ALAN, especialidad=ARTE, grado=SR)"
+      },
+      "thread_id": 38
+    },
+    {
+      "defined_class": "com.tech.exam.estudiante.EstudianteMapperImpl",
+      "event": "call",
+      "id": 6,
+      "lineno": 18,
+      "method_id": "toEstudianteEntity",
+      "parameters": [
+        {
+          "class": "com.tech.exam.estudiante.Estudiante",
+          "kind": "req",
+          "name": "estudiante",
+          "object_id": 203063921,
+          "value": "Estudiante(id=null, codigo=404, nombre=ALAN, especialidad=ARTE, grado=SR)"
+        }
+      ],
+      "path": "com/tech/exam/estudiante/EstudianteMapperImpl.java",
+      "receiver": {
+        "class": "com.tech.exam.estudiante.EstudianteMapperImpl",
+        "object_id": 346906582,
+        "value": "com.tech.exam.estudiante.EstudianteMapperImpl@14ad5fd6"
+      },
+      "static": false,
+      "thread_id": 38
+    },
+    {
+      "elapsed": 0.00002688,
+      "event": "return",
+      "id": 7,
+      "parent_id": 6,
+      "return_value": {
+        "class": "com.tech.exam.estudiante.EstudianteEntity",
+        "object_id": 1367728155,
+        "value": "EstudianteEntity(codigo=404, nombre=ALAN, especialidad=ARTE, grado=SR)"
+      },
+      "thread_id": 38
+    },
+    {
+      "event": "call",
+      "id": 8,
+      "sql_query": {
+        "database_type": "H2",
+        "sql": "select next value for estudiante_seq"
+      },
+      "thread_id": 38
+    },
+    {
+      "elapsed": 0.0069817,
+      "event": "return",
+      "id": 9,
+      "parent_id": 8,
+      "thread_id": 38
+    },
+    {
+      "event": "call",
+      "id": 10,
+      "sql_query": {
+        "database_type": "H2",
+        "sql": "insert into estudiante (codigo,fecha_creacion,especialidad,grado,fecha_modificacion,nombre,id) values (?,?,?,?,?,?,?)"
+      },
+      "thread_id": 38
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 11,
+      "parent_id": 10,
+      "thread_id": 38
+    },
+    {
+      "defined_class": "com.tech.exam.estudiante.EstudianteMapperImpl",
+      "event": "call",
+      "id": 12,
+      "lineno": 79,
+      "method_id": "toEstudiante",
+      "parameters": [
+        {
+          "class": "com.tech.exam.estudiante.EstudianteEntity",
+          "kind": "req",
+          "name": "estudianteEntity",
+          "object_id": 1367728155,
+          "value": "EstudianteEntity(codigo=404, nombre=ALAN, especialidad=ARTE, grado=SR)"
+        }
+      ],
+      "path": "com/tech/exam/estudiante/EstudianteMapperImpl.java",
+      "receiver": {
+        "class": "com.tech.exam.estudiante.EstudianteMapperImpl",
+        "object_id": 346906582,
+        "value": "com.tech.exam.estudiante.EstudianteMapperImpl@14ad5fd6"
+      },
+      "static": false,
+      "thread_id": 38
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 13,
+      "parent_id": 12,
+      "return_value": {
+        "class": "com.tech.exam.estudiante.Estudiante",
+        "object_id": 2055851955,
+        "value": "Estudiante(id=-40, codigo=404, nombre=ALAN, especialidad=ARTE, grado=SR)"
+      },
+      "thread_id": 38
+    },
+    {
+      "elapsed": 0.01867605,
+      "event": "return",
+      "id": 14,
+      "parent_id": 3,
+      "return_value": {
+        "class": "com.tech.exam.estudiante.Estudiante",
+        "object_id": 2055851955,
+        "value": "Estudiante(id=-40, codigo=404, nombre=ALAN, especialidad=ARTE, grado=SR)"
+      },
+      "thread_id": 38
+    },
+    {
+      "defined_class": "com.tech.exam.estudiante.EstudianteAspect",
+      "event": "call",
+      "id": 15,
+      "lineno": 16,
+      "method_id": "logSavedAttempt",
+      "parameters": [
+        {
+          "class": "org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint",
+          "kind": "req",
+          "name": "joinPoint",
+          "object_id": 1544061542,
+          "value": "execution(Estudiante com.tech.exam.estudiante.EstudianteService.saveEstudiante(EstudianteRequest))"
+        },
+        {
+          "class": "com.tech.exam.estudiante.Estudiante",
+          "kind": "req",
+          "name": "estudiante",
+          "object_id": 2055851955,
+          "value": "Estudiante(id=-40, codigo=404, nombre=ALAN, especialidad=ARTE, grado=SR)"
+        }
+      ],
+      "path": "src/main/java/com/tech/exam/estudiante/EstudianteAspect.java",
+      "receiver": {
+        "class": "com.tech.exam.estudiante.EstudianteAspect",
+        "object_id": 1133742613,
+        "value": "com.tech.exam.estudiante.EstudianteAspect@43938a15"
+      },
+      "static": false,
+      "thread_id": 38
+    },
+    {
+      "elapsed": 0.00014216,
+      "event": "return",
+      "id": 16,
+      "parent_id": 15,
+      "thread_id": 38
+    },
+    {
+      "elapsed": 0.0253351,
+      "event": "return",
+      "id": 17,
+      "parent_id": 2,
+      "return_value": {
+        "class": "org.springframework.http.ResponseEntity",
+        "object_id": 1996325960,
+        "value": "<201 CREATED Created,[Location:\"http://localhost:9090/api/estudiante/404\"]>"
+      },
+      "thread_id": 38
+    },
+    {
+      "elapsed": 0.03655659,
+      "event": "return",
+      "http_server_response": {
+        "headers": {
+          "Location": "http://localhost:9090/api/estudiante/404"
+        },
+        "status": 201
+      },
+      "id": 18,
+      "parent_id": 1,
+      "thread_id": 38
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "POST /api/estudiante (201) - 12:25:30.438",
+    "app": "Tech-exam",
+    "language": {
+      "name": "java",
+      "version": "17.0.12+10-LTS",
+      "engine": "OpenJDK 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "request_recording",
+      "type": "requests"
+    },
+    "recording": {},
+    "git": {
+      "repository": "git@github.com:billy-idle/Tech-exam.git",
+      "branch": "feature/fill-form-in",
+      "commit": "3aac6fdf8447bec34aad7856c3c93a655bf908b6"
+    }
+  },
+  "classMap": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "name": "toEstudiante",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/tech/exam/estudiante/EstudianteMapperImpl.java:63"
+                        },
+                        {
+                          "name": "toEstudiante",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/tech/exam/estudiante/EstudianteMapperImpl.java:79"
+                        },
+                        {
+                          "name": "toEstudianteEntity",
+                          "type": "function",
+                          "static": false,
+                          "location": "com/tech/exam/estudiante/EstudianteMapperImpl.java:18"
+                        }
+                      ],
+                      "name": "EstudianteMapperImpl",
+                      "type": "class"
+                    },
+                    {
+                      "children": [
+                        {
+                          "name": "saveEstudiante",
+                          "type": "function",
+                          "static": false,
+                          "location": "src/main/java/com/tech/exam/estudiante/EstudianteService.java:21"
+                        }
+                      ],
+                      "name": "EstudianteService",
+                      "type": "class"
+                    },
+                    {
+                      "children": [
+                        {
+                          "name": "saveEstudiante",
+                          "type": "function",
+                          "static": false,
+                          "location": "src/main/java/com/tech/exam/estudiante/EstudianteController.java:23"
+                        }
+                      ],
+                      "name": "EstudianteController",
+                      "type": "class"
+                    },
+                    {
+                      "children": [
+                        {
+                          "name": "logSavedAttempt",
+                          "type": "function",
+                          "static": false,
+                          "location": "src/main/java/com/tech/exam/estudiante/EstudianteAspect.java:16"
+                        }
+                      ],
+                      "name": "EstudianteAspect",
+                      "type": "class"
+                    }
+                  ],
+                  "name": "estudiante",
+                  "type": "package"
+                }
+              ],
+              "name": "exam",
+              "type": "package"
+            }
+          ],
+          "name": "tech",
+          "type": "package"
+        }
+      ],
+      "name": "com",
+      "type": "package"
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "POST /api/estudiante"
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "select next value for estudiante_seq"
+        },
+        {
+          "type": "query",
+          "name": "insert into estudiante (codigo,fecha_creacion,especialidad,grado,fecha_modificacion,nombre,id) values (?,?,?,?,?,?,?)"
+        }
+      ]
+    }
+  ]
+}

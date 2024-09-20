@@ -1,0 +1,5 @@
+language: "java"
+name: "Tech-exam"
+appmap_dir: "tmp/appmap"
+packages:
+- path: "com.tech.exam"
