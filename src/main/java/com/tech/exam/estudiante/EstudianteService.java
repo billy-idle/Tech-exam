@@ -3,7 +3,6 @@ package com.tech.exam.estudiante;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -11,7 +10,6 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-@Slf4j
 @Service
 @Validated
 @RequiredArgsConstructor
@@ -21,7 +19,6 @@ public class EstudianteService {
 
     public Estudiante saveEstudiante(@Valid EstudianteRequest request) {
         EstudianteEntity entity = mapper.toEstudianteEntity(mapper.toEstudiante(request));
-        log.info("EstudianteEntity: {}", entity);
         return mapper.toEstudiante(repository.save(entity));
     }
 

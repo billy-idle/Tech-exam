@@ -16,7 +16,7 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ClaseEntity extends EntityBase {
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String nombre;
     @Column(nullable = false)
     private String horario;

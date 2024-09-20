@@ -1,7 +1,6 @@
 package com.tech.exam.estudiante;
 
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
 import org.mapstruct.MappingConstants;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -11,10 +10,7 @@ import java.util.List;
 
 @Mapper(componentModel = MappingConstants.ComponentModel.SPRING)
 public interface EstudianteMapper {
-    //@Mapping(target = "id", expression = "java(0L)")
     EstudianteEntity toEstudianteEntity(Estudiante estudiante);
-
-    Estudiante toEstudiante(EstudianteEntity estudianteEntity);
 
     List<EstudianteEntity> toEstudianteEntities(List<Estudiante> estudiantes);
 
@@ -29,4 +25,6 @@ public interface EstudianteMapper {
         }
         return new PageImpl<>(estudiantes, pageRequest.getPageable(), pageRequest.getTotalElements());
     }
+
+    Estudiante toEstudiante(EstudianteEntity estudianteEntity);
 }
